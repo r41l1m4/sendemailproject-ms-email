@@ -1,0 +1,10 @@
+services:
+  db:
+    image: postgres:latest
+    container_name: postgres-ms-email
+    environment:
+      POSTGRES_PASSWORD: post123
+      POSTGRES_USER: post123
+      POSTGRES_DB: ms-email
+    ports:
+      - 5433:5432

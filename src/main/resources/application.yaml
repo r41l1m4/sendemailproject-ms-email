@@ -1,0 +1,12 @@
+
+server:
+  port: 8082
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/ms-email
+    username: post123
+    password: post123
+  jpa:
+    hibernate:
+      ddl-auto: update
