@@ -10,3 +10,10 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
+  rabbitmq:
+    addresses: ${RABBIT_URL}
+
+broker:
+  queue:
+    email:
+      name: default.email
