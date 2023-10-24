@@ -12,6 +12,17 @@ spring:
       ddl-auto: update
   rabbitmq:
     addresses: ${RABBIT_URL}
+  mail:
+    host: ${SMTP_HOST}
+    port: ${SMTP_PORT}
+    username: ${SMTP_USERNAME}
+    password: ${SMTP_PASSWORD}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
 
 broker:
   queue:
